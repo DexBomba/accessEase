@@ -1,0 +1,1606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="AccessEase - An interactive HCI prototype for learning accessibility and mobile design."
+    >
+
+    <title>AccessEase | Accessibility & Mobile Design</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link">
+        Skip to main content
+    </a>
+
+
+    <!-- =========================================================
+         HEADER
+    ========================================================== -->
+    <header class="site-header">
+        <div class="header-container">
+
+            <a href="#home" class="brand" aria-label="AccessEase Home">
+                <span class="brand-mark" aria-hidden="true">A</span>
+
+                <span class="brand-text">
+                    <strong>AccessEase</strong>
+                    <small>Accessibility & Mobile Design</small>
+                </span>
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menu-toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="main-navigation"
+            >
+                <span aria-hidden="true">☰</span>
+                <span class="menu-text">Menu</span>
+            </button>
+
+            <nav
+                class="main-navigation"
+                id="main-navigation"
+                aria-label="Main navigation"
+            >
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#lab" class="nav-link">Accessibility Lab</a>
+                <a href="#pour" class="nav-link">WCAG</a>
+                <a href="#settings" class="nav-link">Settings</a>
+                <a href="#mobile-design" class="nav-link">Mobile Design</a>
+                <a href="#feedback" class="nav-link">Feedback</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- =========================================================
+         MAIN
+    ========================================================== -->
+    <main id="main-content">
+
+
+        <!-- =====================================================
+             HOME
+        ====================================================== -->
+        <section class="hero section" id="home">
+            <div class="container hero-grid">
+
+                <div class="hero-content">
+                    <p class="eyebrow">Human-Computer Interaction Prototype</p>
+
+                    <h1>
+                        Experience better
+                        <span>accessible design.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        AccessEase is an interactive learning prototype that
+                        demonstrates how accessibility and user-centered design
+                        can improve digital interfaces.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#lab" class="button primary-button">
+                            Explore Accessibility Lab
+                        </a>
+
+                        <a href="#settings" class="button secondary-button">
+                            Try Accessibility Settings
+                        </a>
+                    </div>
+
+                    <p class="prototype-note">
+                        This is an educational prototype and does not claim
+                        complete WCAG or legal compliance.
+                    </p>
+                </div>
+
+
+                <div class="hero-preview" aria-label="AccessEase preview">
+                    <div class="preview-window">
+
+                        <div class="preview-topbar">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <div class="preview-content">
+                            <div class="preview-label">
+                                ACCESSIBLE INTERFACE
+                            </div>
+
+                            <div class="preview-heading"></div>
+                            <div class="preview-line long"></div>
+                            <div class="preview-line"></div>
+
+                            <div class="preview-cards">
+                                <div class="preview-card">
+                                    <strong>Aa</strong>
+                                    <span>Readable</span>
+                                </div>
+
+                                <div class="preview-card">
+                                    <strong>Tab</strong>
+                                    <span>Keyboard</span>
+                                </div>
+
+                                <div class="preview-card">
+                                    <strong>CC</strong>
+                                    <span>Captions</span>
+                                </div>
+                            </div>
+
+                            <div class="preview-button">
+                                Clear Action
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =====================================================
+             ACCESSIBILITY OVERVIEW
+        ====================================================== -->
+        <section class="section overview-section">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">Understanding Accessibility</p>
+
+                    <h2>Different users have different needs.</h2>
+
+                    <p>
+                        Accessible design considers how people with different
+                        abilities interact with digital products.
+                    </p>
+                </div>
+
+
+                <div class="overview-grid">
+
+                    <article class="overview-card">
+                        <span class="card-number">01</span>
+                        <h3>Visual</h3>
+                        <p>
+                            Users may need readable text, strong contrast,
+                            alternative text, or screen-reader-friendly content.
+                        </p>
+                    </article>
+
+                    <article class="overview-card">
+                        <span class="card-number">02</span>
+                        <h3>Hearing</h3>
+                        <p>
+                            Audio and video information should also be available
+                            through captions, transcripts, or visual alternatives.
+                        </p>
+                    </article>
+
+                    <article class="overview-card">
+                        <span class="card-number">03</span>
+                        <h3>Motor</h3>
+                        <p>
+                            Some users rely on keyboards or other input methods
+                            instead of precise mouse or touch movements.
+                        </p>
+                    </article>
+
+                    <article class="overview-card">
+                        <span class="card-number">04</span>
+                        <h3>Cognitive</h3>
+                        <p>
+                            Clear language, predictable layouts, and understandable
+                            feedback can make interfaces easier to use.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =====================================================
+             ACCESSIBILITY LAB
+        ====================================================== -->
+        <section class="section lab-section" id="lab">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">Interactive Learning</p>
+                    <h2>Accessibility Lab</h2>
+
+                    <p>
+                        Try each demonstration to see how interface decisions can
+                        affect usability and accessibility.
+                    </p>
+                </div>
+
+
+                <!-- =============================================
+                     01 VISUAL ACCESSIBILITY
+                ============================================== -->
+                <article class="demo-section">
+
+                    <div class="demo-heading">
+                        <span class="demo-number">01</span>
+
+                        <div>
+                            <p class="demo-category">Visual Accessibility</p>
+                            <h3>Images need meaningful descriptions.</h3>
+
+                            <p>
+                                Users who cannot see an image may rely on
+                                alternative text or other descriptions to
+                                understand its meaning.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="visual-demo demo-box">
+
+                        <div class="sample-image" role="img"
+                            aria-label="Illustration of a student using a laptop at a desk">
+                            <div class="image-placeholder">
+                                <span aria-hidden="true">▧</span>
+                                <strong>Sample Image</strong>
+                                <small>Student using a laptop</small>
+                            </div>
+                        </div>
+
+                        <div class="demo-content">
+                            <p class="demo-label">Image description</p>
+
+                            <p class="alt-example">
+                                “A student sitting at a desk while using a laptop
+                                to access an online learning website.”
+                            </p>
+
+                            <button
+                                type="button"
+                                class="button primary-button"
+                                id="toggle-description"
+                                aria-expanded="false"
+                                aria-controls="description-details"
+                            >
+                                Why is this useful?
+                            </button>
+
+                            <div
+                                class="explanation-box"
+                                id="description-details"
+                                hidden
+                            >
+                                <strong>Why it matters:</strong>
+
+                                <p>
+                                    A meaningful description communicates
+                                    important visual information to users who
+                                    cannot see the image.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </article>
+
+
+                <!-- =============================================
+                     02 HEARING ACCESSIBILITY
+                ============================================== -->
+                <article class="demo-section">
+
+                    <div class="demo-heading">
+                        <span class="demo-number">02</span>
+
+                        <div>
+                            <p class="demo-category">Hearing Accessibility</p>
+                            <h3>Audio information needs alternatives.</h3>
+
+                            <p>
+                                Captions and transcripts allow information to be
+                                understood even when audio cannot be heard.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="hearing-demo demo-box">
+
+                        <div class="mock-video">
+
+                            <div class="video-screen">
+                                <div class="play-symbol" aria-hidden="true">
+                                    ▶
+                                </div>
+
+                                <p>Campus Announcement</p>
+
+                                <div
+                                    class="caption-display"
+                                    id="caption-display"
+                                    aria-live="polite"
+                                ></div>
+                            </div>
+
+                            <div class="video-controls">
+                                <button
+                                    type="button"
+                                    class="button secondary-button"
+                                    id="caption-toggle"
+                                    aria-pressed="false"
+                                >
+                                    Turn Captions On
+                                </button>
+
+                                <button
+                                    type="button"
+                                    class="button secondary-button"
+                                    id="transcript-toggle"
+                                    aria-expanded="false"
+                                    aria-controls="transcript"
+                                >
+                                    Show Transcript
+                                </button>
+                            </div>
+
+                        </div>
+
+
+                        <div class="transcript" id="transcript" hidden>
+                            <h4>Transcript</h4>
+
+                            <p>
+                                Welcome to the campus announcement.
+                                Enrollment for the first semester begins
+                                Monday at 8:00 AM.
+                            </p>
+
+                            <p>
+                                Students should prepare the required documents
+                                before visiting the enrollment office.
+                            </p>
+                        </div>
+
+                    </div>
+                </article>
+
+
+                <!-- =============================================
+                     03 MOTOR ACCESSIBILITY
+                ============================================== -->
+                <article class="demo-section">
+
+                    <div class="demo-heading">
+                        <span class="demo-number">03</span>
+
+                        <div>
+                            <p class="demo-category">Motor Accessibility</p>
+                            <h3>Keyboard navigation and visible focus.</h3>
+
+                            <p>
+                                Some users navigate websites without a mouse.
+                                Keyboard controls should work, and the currently
+                                focused element should be easy to identify.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="motor-demo demo-box">
+
+                        <div class="instruction-panel">
+                            <p class="demo-label">Keyboard Test</p>
+
+                            <h4>Try navigating without your mouse.</h4>
+
+                            <p>
+                                Click inside the demonstration, then use
+                                <kbd>Tab</kbd> and <kbd>Shift</kbd> +
+                                <kbd>Tab</kbd> to move between controls.
+                                Press <kbd>Enter</kbd> or <kbd>Space</kbd>
+                                to activate a button.
+                            </p>
+                        </div>
+
+
+                        <div class="focus-comparison">
+
+                            <div class="focus-mode-header">
+                                <div>
+                                    <p class="demo-label">
+                                        Focus Visibility
+                                    </p>
+
+                                    <h4 id="focus-mode-title">
+                                        Normal Focus
+                                    </h4>
+                                </div>
+
+                                <button
+                                    type="button"
+                                    class="button primary-button"
+                                    id="focus-mode-toggle"
+                                    aria-pressed="false"
+                                >
+                                    Enable High-Visibility Focus
+                                </button>
+                            </div>
+
+
+                            <div
+                                class="keyboard-demo-area"
+                                id="keyboard-demo-area"
+                            >
+                                <p class="try-label">
+                                    Press Tab through these buttons:
+                                </p>
+
+                                <div class="keyboard-buttons">
+                                    <button
+                                        type="button"
+                                        class="button secondary-button keyboard-test"
+                                        data-action="Previous"
+                                    >
+                                        Previous
+                                    </button>
+
+                                    <button
+                                        type="button"
+                                        class="button primary-button keyboard-test"
+                                        data-action="Select"
+                                    >
+                                        Select
+                                    </button>
+
+                                    <button
+                                        type="button"
+                                        class="button secondary-button keyboard-test"
+                                        data-action="Next"
+                                    >
+                                        Next
+                                    </button>
+                                </div>
+
+                                <p
+                                    class="status-message"
+                                    id="keyboard-result"
+                                    role="status"
+                                    aria-live="polite"
+                                >
+                                    No button activated yet.
+                                </p>
+                            </div>
+
+
+                            <div class="comparison-explanation">
+                                <div>
+                                    <strong>Normal Focus</strong>
+                                    <p>
+                                        A visible outline shows which control
+                                        currently has keyboard focus.
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <strong>High-Visibility Focus</strong>
+                                    <p>
+                                        The outline becomes larger and more
+                                        noticeable, making the focused control
+                                        easier to identify.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- =============================================
+                     04 COGNITIVE ACCESSIBILITY
+                ============================================== -->
+                <article class="demo-section">
+
+                    <div class="demo-heading">
+                        <span class="demo-number">04</span>
+
+                        <div>
+                            <p class="demo-category">
+                                Cognitive Accessibility
+                            </p>
+
+                            <h3>Clear messages are easier to understand.</h3>
+
+                            <p>
+                                Error messages should explain what happened and
+                                what the user can do next.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="cognitive-grid">
+
+                        <div class="message-example poor-example">
+                            <span class="example-tag">Poor Example</span>
+
+                            <h4>Error 0x004-A7</h4>
+
+                            <p>
+                                Request validation exception. Invalid
+                                authentication input parameter.
+                            </p>
+
+                            <button type="button" class="button muted-button">
+                                Retry
+                            </button>
+                        </div>
+
+
+                        <div class="message-example good-example">
+                            <span class="example-tag">Better Example</span>
+
+                            <h4>We couldn't sign you in.</h4>
+
+                            <p>
+                                Check your email and password, then try again.
+                                If you forgot your password, you can reset it.
+                            </p>
+
+                            <button type="button" class="button primary-button">
+                                Try Again
+                            </button>
+                        </div>
+
+                    </div>
+                </article>
+
+
+                <!-- =============================================
+                     05 MOTION ACCESSIBILITY
+                ============================================== -->
+                <article class="demo-section">
+
+                    <div class="demo-heading">
+                        <span class="demo-number">05</span>
+
+                        <div>
+                            <p class="demo-category">Motion Accessibility</p>
+
+                            <h3>Not every interface needs strong movement.</h3>
+
+                            <p>
+                                Some users may find unnecessary movement
+                                distracting or uncomfortable. Reduced motion can
+                                keep the same information while limiting
+                                animation.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="motion-demo demo-box">
+
+                        <div class="motion-controls">
+
+                            <div>
+                                <p class="demo-label">Motion Mode</p>
+
+                                <h4 id="motion-mode-title">
+                                    Normal Motion
+                                </h4>
+
+                                <p id="motion-mode-description">
+                                    The demonstration uses a visible sliding
+                                    animation.
+                                </p>
+                            </div>
+
+
+                            <div class="motion-button-group">
+
+                                <button
+                                    type="button"
+                                    class="button secondary-button"
+                                    id="motion-mode-toggle"
+                                    aria-pressed="false"
+                                >
+                                    Use Reduced Motion
+                                </button>
+
+                                <button
+                                    type="button"
+                                    class="button primary-button"
+                                    id="run-motion-demo"
+                                >
+                                    Run Motion Demo
+                                </button>
+
+                            </div>
+                        </div>
+
+
+                        <div
+                            class="motion-stage"
+                            id="motion-stage"
+                            aria-label="Motion accessibility demonstration"
+                        >
+                            <div
+                                class="motion-object"
+                                id="motion-object"
+                            >
+                                <span aria-hidden="true">A</span>
+                                <strong>AccessEase</strong>
+                            </div>
+
+                            <div
+                                class="motion-destination"
+                                aria-hidden="true"
+                            >
+                                Destination
+                            </div>
+                        </div>
+
+
+                        <p
+                            class="status-message"
+                            id="motion-status"
+                            role="status"
+                            aria-live="polite"
+                        >
+                            Select a motion mode and run the demonstration.
+                        </p>
+
+
+                        <div class="motion-learning-box">
+                            <strong>What should you notice?</strong>
+
+                            <p>
+                                In Normal Motion, the card travels across the
+                                screen. In Reduced Motion, the same result is
+                                shown with little or no movement.
+                            </p>
+                        </div>
+
+                    </div>
+                </article>
+
+
+                <!-- =============================================
+                     06 ETHICAL ACCESSIBILITY
+                ============================================== -->
+                <article class="demo-section">
+
+                    <div class="demo-heading">
+                        <span class="demo-number">06</span>
+
+                        <div>
+                            <p class="demo-category">
+                                Ethical Accessibility
+                            </p>
+
+                            <h3>
+                                Accessibility is also about responsible design.
+                            </h3>
+
+                            <p>
+                                Ethical design considers inclusion, fairness,
+                                independence, privacy, and equal opportunity.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="ethical-intro">
+                        <p>
+                            Explore the scenarios below and compare a poor
+                            approach with a more responsible design decision.
+                        </p>
+                    </div>
+
+
+                    <div class="ethical-grid">
+
+                        <!-- Inclusion -->
+                        <article class="ethical-card">
+                            <span class="ethical-number">01</span>
+
+                            <h4>Inclusion</h4>
+
+                            <div class="scenario-box">
+                                <strong>Scenario</strong>
+                                <p>
+                                    A university website publishes important
+                                    information only inside images.
+                                </p>
+                            </div>
+
+                            <div class="ethical-comparison">
+                                <div class="ethical-bad">
+                                    <strong>Poor Approach</strong>
+                                    <p>
+                                        Important text exists only inside the
+                                        image.
+                                    </p>
+                                </div>
+
+                                <div class="ethical-good">
+                                    <strong>Better Approach</strong>
+                                    <p>
+                                        Provide the same information as readable
+                                        webpage text.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <button
+                                type="button"
+                                class="button secondary-button ethical-answer"
+                                data-target="ethical-inclusion"
+                                aria-expanded="false"
+                            >
+                                Why does this matter?
+                            </button>
+
+                            <div
+                                class="ethical-explanation"
+                                id="ethical-inclusion"
+                                hidden
+                            >
+                                Inclusion means designing so that more people
+                                can access the same information and services.
+                            </div>
+                        </article>
+
+
+                        <!-- Fairness -->
+                        <article class="ethical-card">
+                            <span class="ethical-number">02</span>
+
+                            <h4>Fairness</h4>
+
+                            <div class="scenario-box">
+                                <strong>Scenario</strong>
+                                <p>
+                                    An online activity can only be completed
+                                    using precise mouse movements.
+                                </p>
+                            </div>
+
+                            <div class="ethical-comparison">
+                                <div class="ethical-bad">
+                                    <strong>Poor Approach</strong>
+                                    <p>
+                                        Require every user to interact in
+                                        exactly the same way.
+                                    </p>
+                                </div>
+
+                                <div class="ethical-good">
+                                    <strong>Better Approach</strong>
+                                    <p>
+                                        Support keyboard interaction and other
+                                        input methods.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <button
+                                type="button"
+                                class="button secondary-button ethical-answer"
+                                data-target="ethical-fairness"
+                                aria-expanded="false"
+                            >
+                                Why does this matter?
+                            </button>
+
+                            <div
+                                class="ethical-explanation"
+                                id="ethical-fairness"
+                                hidden
+                            >
+                                Fairness does not always mean giving everyone
+                                the exact same interaction. Users may need
+                                different ways to accomplish the same task.
+                            </div>
+                        </article>
+
+
+                        <!-- Respect -->
+                        <article class="ethical-card">
+                            <span class="ethical-number">03</span>
+
+                            <h4>Respect & Independence</h4>
+
+                            <div class="scenario-box">
+                                <strong>Scenario</strong>
+                                <p>
+                                    A user needs assistance every time they want
+                                    to complete a basic online task.
+                                </p>
+                            </div>
+
+                            <div class="ethical-comparison">
+                                <div class="ethical-bad">
+                                    <strong>Poor Approach</strong>
+                                    <p>
+                                        Assume another person will always help
+                                        the user.
+                                    </p>
+                                </div>
+
+                                <div class="ethical-good">
+                                    <strong>Better Approach</strong>
+                                    <p>
+                                        Design the task so users can complete it
+                                        independently when possible.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <button
+                                type="button"
+                                class="button secondary-button ethical-answer"
+                                data-target="ethical-respect"
+                                aria-expanded="false"
+                            >
+                                Why does this matter?
+                            </button>
+
+                            <div
+                                class="ethical-explanation"
+                                id="ethical-respect"
+                                hidden
+                            >
+                                Accessible design should support independence
+                                and avoid unnecessary barriers.
+                            </div>
+                        </article>
+
+
+                        <!-- Privacy -->
+                        <article class="ethical-card">
+                            <span class="ethical-number">04</span>
+
+                            <h4>Privacy</h4>
+
+                            <div class="scenario-box">
+                                <strong>Scenario</strong>
+                                <p>
+                                    A website asks users to publicly explain
+                                    their disability before providing an
+                                    accessibility option.
+                                </p>
+                            </div>
+
+                            <div class="ethical-comparison">
+                                <div class="ethical-bad">
+                                    <strong>Poor Approach</strong>
+                                    <p>
+                                        Require unnecessary personal
+                                        information.
+                                    </p>
+                                </div>
+
+                                <div class="ethical-good">
+                                    <strong>Better Approach</strong>
+                                    <p>
+                                        Allow accessibility preferences without
+                                        requiring sensitive explanations.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <button
+                                type="button"
+                                class="button secondary-button ethical-answer"
+                                data-target="ethical-privacy"
+                                aria-expanded="false"
+                            >
+                                Why does this matter?
+                            </button>
+
+                            <div
+                                class="ethical-explanation"
+                                id="ethical-privacy"
+                                hidden
+                            >
+                                Accessibility should not require users to reveal
+                                unnecessary personal information.
+                            </div>
+                        </article>
+
+
+                        <!-- Equal Opportunity -->
+                        <article class="ethical-card">
+                            <span class="ethical-number">05</span>
+
+                            <h4>Equal Opportunity</h4>
+
+                            <div class="scenario-box">
+                                <strong>Scenario</strong>
+                                <p>
+                                    An online examination contains videos with
+                                    important instructions but no captions or
+                                    transcript.
+                                </p>
+                            </div>
+
+                            <div class="ethical-comparison">
+                                <div class="ethical-bad">
+                                    <strong>Poor Approach</strong>
+                                    <p>
+                                        Provide important instructions only
+                                        through audio.
+                                    </p>
+                                </div>
+
+                                <div class="ethical-good">
+                                    <strong>Better Approach</strong>
+                                    <p>
+                                        Provide captions or a text transcript
+                                        containing the same information.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <button
+                                type="button"
+                                class="button secondary-button ethical-answer"
+                                data-target="ethical-opportunity"
+                                aria-expanded="false"
+                            >
+                                Why does this matter?
+                            </button>
+
+                            <div
+                                class="ethical-explanation"
+                                id="ethical-opportunity"
+                                hidden
+                            >
+                                Users should have a fair opportunity to receive
+                                important information and complete digital
+                                activities.
+                            </div>
+                        </article>
+
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- =====================================================
+             WCAG / POUR
+        ====================================================== -->
+        <section class="section pour-section" id="pour">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">Accessibility Principles</p>
+                    <h2>WCAG and the POUR Principles</h2>
+
+                    <p>
+                        WCAG organizes many accessibility recommendations around
+                        four major principles: Perceivable, Operable,
+                        Understandable, and Robust.
+                    </p>
+                </div>
+
+
+                <div class="pour-grid">
+
+                    <article class="pour-card">
+                        <span class="pour-letter">P</span>
+                        <h3>Perceivable</h3>
+
+                        <p>
+                            Information should be presented in ways users can
+                            perceive.
+                        </p>
+
+                        <ul>
+                            <li>Text alternatives for images</li>
+                            <li>Captions for audio and video</li>
+                            <li>Readable text and contrast</li>
+                        </ul>
+                    </article>
+
+
+                    <article class="pour-card">
+                        <span class="pour-letter">O</span>
+                        <h3>Operable</h3>
+
+                        <p>
+                            Users should be able to operate interface controls
+                            using appropriate input methods.
+                        </p>
+
+                        <ul>
+                            <li>Keyboard-accessible controls</li>
+                            <li>Visible keyboard focus</li>
+                            <li>Usable navigation</li>
+                        </ul>
+                    </article>
+
+
+                    <article class="pour-card">
+                        <span class="pour-letter">U</span>
+                        <h3>Understandable</h3>
+
+                        <p>
+                            Content and interactions should be clear and
+                            predictable.
+                        </p>
+
+                        <ul>
+                            <li>Simple instructions</li>
+                            <li>Clear error messages</li>
+                            <li>Consistent navigation</li>
+                        </ul>
+                    </article>
+
+
+                    <article class="pour-card">
+                        <span class="pour-letter">R</span>
+                        <h3>Robust</h3>
+
+                        <p>
+                            Content should work reliably with different
+                            technologies and assistive tools.
+                        </p>
+
+                        <ul>
+                            <li>Semantic HTML</li>
+                            <li>Correct labels</li>
+                            <li>Compatible controls</li>
+                        </ul>
+                    </article>
+
+                </div>
+
+
+                <div class="important-note">
+                    <strong>Prototype Note</strong>
+
+                    <p>
+                        AccessEase demonstrates selected accessibility concepts.
+                        Formal WCAG evaluation and assistive technology testing
+                        would still be required before claiming compliance.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =====================================================
+             ACCESSIBILITY SETTINGS
+        ====================================================== -->
+        <section class="section settings-section" id="settings">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">Personalization</p>
+                    <h2>Accessibility Settings</h2>
+
+                    <p>
+                        Change the interface to make text and visual contrast
+                        easier to use. These preferences are saved in your
+                        browser.
+                    </p>
+                </div>
+
+
+                <div class="settings-panel">
+
+                    <!-- Text Size -->
+                    <div class="setting-row">
+
+                        <div class="setting-information">
+                            <h3>Text Size</h3>
+
+                            <p>
+                                Increase or decrease the overall text size of
+                                the interface.
+                            </p>
+                        </div>
+
+
+                        <div
+                            class="text-size-controls"
+                            aria-label="Text size controls"
+                        >
+                            <button
+                                type="button"
+                                class="setting-button"
+                                id="decrease-text"
+                                aria-label="Decrease text size"
+                            >
+                                A−
+                            </button>
+
+                            <span
+                                id="text-size-value"
+                                aria-live="polite"
+                            >
+                                100%
+                            </span>
+
+                            <button
+                                type="button"
+                                class="setting-button"
+                                id="increase-text"
+                                aria-label="Increase text size"
+                            >
+                                A+
+                            </button>
+                        </div>
+
+                    </div>
+
+
+                    <!-- High Contrast -->
+                    <div class="setting-row">
+
+                        <div class="setting-information">
+                            <h3>High Contrast</h3>
+
+                            <p>
+                                Increases the visual difference between text,
+                                controls, backgrounds, and borders.
+                            </p>
+                        </div>
+
+
+                        <label class="switch-control">
+                            <span class="switch-label">
+                                Enable high contrast
+                            </span>
+
+                            <input
+                                type="checkbox"
+                                id="contrast-toggle"
+                            >
+
+                            <span
+                                class="switch"
+                                aria-hidden="true"
+                            ></span>
+                        </label>
+
+                    </div>
+
+
+                    <!-- Removed features notice -->
+                    <div class="settings-lab-note">
+                        <strong>Looking for keyboard focus or reduced motion?</strong>
+
+                        <p>
+                            These concepts are demonstrated interactively in the
+                            Accessibility Lab so you can directly compare how
+                            they affect an interface.
+                        </p>
+
+                        <a href="#lab" class="text-link">
+                            Go to Accessibility Lab
+                        </a>
+                    </div>
+
+
+                    <div class="settings-footer">
+                        <button
+                            type="button"
+                            class="button secondary-button"
+                            id="reset-settings"
+                        >
+                            Reset Settings
+                        </button>
+
+                        <p
+                            id="settings-status"
+                            class="settings-status"
+                            role="status"
+                            aria-live="polite"
+                        ></p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =====================================================
+             MOBILE DESIGN
+        ====================================================== -->
+        <section class="section mobile-section" id="mobile-design">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">Design for Mobile Devices</p>
+                    <h2>Good interfaces should work on smaller screens.</h2>
+
+                    <p>
+                        Mobile design requires readable content, simple
+                        navigation, appropriate touch controls, responsive
+                        layouts, and clear system feedback.
+                    </p>
+                </div>
+
+
+                <div class="mobile-principles-grid">
+
+                    <article class="mobile-principle">
+                        <span class="card-number">01</span>
+                        <h3>Responsive Layout</h3>
+
+                        <p>
+                            Content should adapt to different screen sizes
+                            instead of forcing users to zoom or scroll
+                            horizontally.
+                        </p>
+                    </article>
+
+
+                    <article class="mobile-principle">
+                        <span class="card-number">02</span>
+                        <h3>Touch-Friendly Controls</h3>
+
+                        <p>
+                            Buttons and interactive elements should provide
+                            enough space for comfortable touch interaction.
+                        </p>
+                    </article>
+
+
+                    <article class="mobile-principle">
+                        <span class="card-number">03</span>
+                        <h3>Clear Navigation</h3>
+
+                        <p>
+                            Mobile navigation should remain simple,
+                            understandable, and easy to access.
+                        </p>
+                    </article>
+
+
+                    <article class="mobile-principle">
+                        <span class="card-number">04</span>
+                        <h3>System Feedback</h3>
+
+                        <p>
+                            Users should receive clear feedback after actions
+                            such as submitting, saving, or loading information.
+                        </p>
+                    </article>
+
+                </div>
+
+
+                <div class="device-demo">
+
+                    <div class="device-demo-content">
+                        <p class="demo-label">Responsive Example</p>
+
+                        <h3>Resize your browser window.</h3>
+
+                        <p>
+                            Make the browser narrower and observe how the
+                            navigation, cards, text, and sections reorganize
+                            themselves for smaller screens.
+                        </p>
+
+                        <p class="device-tip">
+                            Tip: On a computer, slowly drag the edge of your
+                            browser window inward.
+                        </p>
+                    </div>
+
+
+                    <div class="phone-mockup" aria-hidden="true">
+                        <div class="phone-speaker"></div>
+
+                        <div class="phone-screen">
+                            <div class="phone-header">
+                                AccessEase
+                            </div>
+
+                            <div class="phone-hero-block"></div>
+                            <div class="phone-line long"></div>
+                            <div class="phone-line"></div>
+
+                            <div class="phone-card"></div>
+                            <div class="phone-card"></div>
+
+                            <div class="phone-action">
+                                Continue
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =====================================================
+             FEEDBACK
+        ====================================================== -->
+        <section class="section feedback-section" id="feedback">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">Prototype Evaluation</p>
+                    <h2>Share your feedback.</h2>
+
+                    <p>
+                        This prototype is still being developed. Feedback can
+                        help identify usability and accessibility issues that
+                        should be improved.
+                    </p>
+                </div>
+
+
+                <div class="feedback-layout">
+
+                    <form class="feedback-form" id="feedback-form">
+
+                        <div class="form-group">
+                            <label for="feedback-name">
+                                Name <span>(optional)</span>
+                            </label>
+
+                            <input
+                                type="text"
+                                id="feedback-name"
+                                name="name"
+                                autocomplete="name"
+                                placeholder="Your name"
+                            >
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="feedback-category">
+                                What are you giving feedback about?
+                            </label>
+
+                            <select
+                                id="feedback-category"
+                                name="category"
+                                required
+                            >
+                                <option value="">
+                                    Select a category
+                                </option>
+
+                                <option value="Accessibility Lab">
+                                    Accessibility Lab
+                                </option>
+
+                                <option value="Accessibility Settings">
+                                    Accessibility Settings
+                                </option>
+
+                                <option value="Mobile Design">
+                                    Mobile Design
+                                </option>
+
+                                <option value="Navigation">
+                                    Navigation
+                                </option>
+
+                                <option value="General">
+                                    General Experience
+                                </option>
+                            </select>
+                        </div>
+
+
+                        <fieldset class="form-group rating-group">
+                            <legend>
+                                How easy was the prototype to use?
+                            </legend>
+
+                            <div class="rating-options">
+
+                                <label>
+                                    <input
+                                        type="radio"
+                                        name="rating"
+                                        value="1"
+                                        required
+                                    >
+                                    <span>1</span>
+                                </label>
+
+                                <label>
+                                    <input
+                                        type="radio"
+                                        name="rating"
+                                        value="2"
+                                    >
+                                    <span>2</span>
+                                </label>
+
+                                <label>
+                                    <input
+                                        type="radio"
+                                        name="rating"
+                                        value="3"
+                                    >
+                                    <span>3</span>
+                                </label>
+
+                                <label>
+                                    <input
+                                        type="radio"
+                                        name="rating"
+                                        value="4"
+                                    >
+                                    <span>4</span>
+                                </label>
+
+                                <label>
+                                    <input
+                                        type="radio"
+                                        name="rating"
+                                        value="5"
+                                    >
+                                    <span>5</span>
+                                </label>
+
+                            </div>
+
+                            <div class="rating-labels">
+                                <span>Difficult</span>
+                                <span>Easy</span>
+                            </div>
+                        </fieldset>
+
+
+                        <div class="form-group">
+                            <label for="feedback-message">
+                                Comments or suggestions
+                            </label>
+
+                            <textarea
+                                id="feedback-message"
+                                name="message"
+                                rows="5"
+                                required
+                                placeholder="Tell us what worked well or what should be improved..."
+                            ></textarea>
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="button primary-button"
+                        >
+                            Save Feedback
+                        </button>
+
+
+                        <p class="privacy-note">
+                            Prototype feedback is stored only in this browser
+                            using local storage. It is not sent to a server.
+                        </p>
+
+
+                        <p
+                            id="feedback-status"
+                            class="feedback-status"
+                            role="status"
+                            aria-live="polite"
+                        ></p>
+
+                    </form>
+
+
+                    <aside class="feedback-info">
+
+                        <p class="demo-label">Current Development Stage</p>
+
+                        <h3>Initial Interactive Prototype</h3>
+
+                        <p>
+                            AccessEase currently demonstrates selected
+                            accessibility and mobile design concepts.
+                        </p>
+
+                        <h4>Future evaluation may include:</h4>
+
+                        <ul>
+                            <li>Formal user testing</li>
+                            <li>Keyboard-only testing</li>
+                            <li>Screen reader testing</li>
+                            <li>Multi-device testing</li>
+                            <li>Accessibility evaluation</li>
+                            <li>Interface refinement</li>
+                        </ul>
+
+                    </aside>
+
+                </div>
+
+
+                <div
+                    class="saved-feedback-section"
+                    id="saved-feedback-section"
+                    hidden
+                >
+                    <div class="saved-feedback-heading">
+                        <div>
+                            <p class="demo-label">Local Prototype Data</p>
+                            <h3>Saved Feedback</h3>
+                        </div>
+
+                        <button
+                            type="button"
+                            class="button secondary-button"
+                            id="clear-feedback"
+                        >
+                            Clear Feedback
+                        </button>
+                    </div>
+
+                    <div
+                        class="saved-feedback"
+                        id="saved-feedback"
+                    ></div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- =========================================================
+         FOOTER
+    ========================================================== -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+
+            <div>
+                <strong>AccessEase</strong>
+
+                <p>
+                    An educational HCI prototype for accessibility and
+                    mobile interface design.
+                </p>
+            </div>
+
+            <p>
+                © <span id="current-year"></span> AccessEase
+            </p>
+
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
